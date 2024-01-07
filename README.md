@@ -13,7 +13,9 @@ Data exploration is performed to understand the dataset and identify patterns. K
 - Creating a correlation matrix heatmap to visualize relationships between variables.
 - Checking for outliers using boxplots and identifying columns with potential outliers.
 - Analyzing the distribution of the target variable 'medv'.
-  
+## Uploading data to s3
+![Alt text](./1 pushing dataset to s3.png)
+
 ## Model Training
 The XGBoost model is trained using Amazon SageMaker. Key steps include:
 
@@ -22,6 +24,7 @@ The XGBoost model is trained using Amazon SageMaker. Key steps include:
 - Configuring the XGBoost estimator with hyperparameters.
 - Training the XGBoost model with the provided dataset.
 - Deploying the trained model to an Amazon SageMaker endpoint for making predictions.
+![Alt text](./2 model training.png)
 
 ## Making Predictions
 After deploying the model, predictions are made using a test sample. The code includes:
