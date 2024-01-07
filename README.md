@@ -26,13 +26,21 @@ The XGBoost model is trained using Amazon SageMaker. Key steps include:
 - Deploying the trained model to an Amazon SageMaker endpoint for making predictions.
 ![Alt text](./2%20model%20training.png)
 
-## Making Predictions
-After deploying the model, predictions are made using a test sample. The code includes:
-
+## Model deployement
 - Setting up the SageMaker endpoint for testing the deployed model.
 - Generating a test sample without the target column.
 - Serializing and deserializing data for prediction.
 - Making predictions using the deployed endpoint and checking the results.
+![Alt text](./3%20model%20deployement%20and%20endpoint%20creation.png)
+
+## Making Predictions
+After deploying the model, predictions are made using a test sample. The code includes:
+- Making predictions using the deployed endpoint and checking the results.
+![Alt text](./4%20prediction.png)
+
 
 ## Cleanup
 To free up resources, the SageMaker endpoint is deleted after testing the deployed model.
+
+![Alt text](./5%20deleting%20the%20endpoint.png)
+
